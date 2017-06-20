@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>模拟开奖</title>
+		<meta name="keywords" content="新疆福彩">
+		<meta name="description" content="新疆福利彩票">
+		<!--id="bs-css"-->
+		<link href="./css/weixin.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- 彩种类型 -->
+		<div id="select_lottery_box" class="select_box">
+			<a id="showdown_lottery" class="lotteryType" href="javascript:;"><span>双色球</span> <em class="downIcon"></em></a>
+			<ul id="lotterytype_list" class="selectList" style="display: none;">
+				<li class="selected" lt="ssq">双色球</li>
+                <li lt="qlc">七乐彩</li>
+                <li lt="3d" class="">3D</li>
+            </ul>	
+		</div>
+		<!-- logo -->
+		<!-- <div class="yaohaoLogo"><em class="logo_qlc"></em></div><!-- logo_ssq,logo_3d,logo_qlc  -->
+        <div id="canvas_wrap" style="margin: 0 auto;">
+            <canvas id="canvas"></canvas>
+        </div>
+        <!-- 弹出层 -->
+        <div id="show_result_layer" class="popUp_layer" style="display:none">
+        	<div class="popUp_layerCon">
+        		<h2 class="tit">
+                    <span id="layer_title">摇奖结果</span>
+					<div id="close_layer_btn" class="closed"><span></span><span></span></div>
+        		</h2>
+        		<div class="lotteryResult">
+        			<ul id="result_ball_list" class="clearfix"></ul>
+        		</div>
+        	</div>
+        </div>
+	</body>
+    <script type="text/javascript" src="./js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="./js/lib/touch.js"></script>
+    <script type="text/javascript" src="./js/drawcanvas.js"></script>
+    <script type="text/javascript" src="./js/drawlottery.js"></script>
+</html>
